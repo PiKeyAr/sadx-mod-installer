@@ -635,7 +635,7 @@ namespace SteamHelper
 					if (Directory.Exists("SoundData"))
 					{
 						WriteLog("Moving the SoundData folder...");
-						if (Directory.Exists(Path.Combine("system", "SoundData"))) Directory.Delete(Path.Combine("system", "SoundData"));
+						if (Directory.Exists(Path.Combine("system", "SoundData"))) Directory.Delete(Path.Combine("system", "SoundData"), true);
 						Directory.Move("SoundData", Path.Combine("system", "SoundData"));
 					}
 					else if (Directory.Exists(Path.Combine("system", "SoundData"))) WriteLog("SoundData folder is already in system");
