@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="TypeSel" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="531, 301" Subtitle="Dialog subtitle...">
+  <CheckBox Name="CheckBox_InstallIcon" Location="0, 250" Size="378, 24" Text="Install a custom sonic.exe icon (preview available)" TabIndex="0" />
+  <CheckBox Name="CheckBox_Reset" Location="0, 276" Size="517, 24" Text="Default graphics settings: check this if the game crashes on startup" TabIndex="1" />
+  <RadioButton Name="Option_Custom" Location="0, 117" Size="495, 24" Text="Custom" TabIndex="2" />
+  <RadioButton Name="Option_Minimal" Location="0, 87" Size="495, 24" Text="Minimal/Vanilla" TabIndex="3" />
+  <Label Name="TypeComment" Location="0, 152" Size="495, 110" Text="Full Dreamcast experience with fixes and enhancements.&#xD;&#xA;&#xD;&#xA;Mods included: SADX Fixed Edition, Dreamcast Levels, Dreamcast Branding, SET layout fixes, Sound Overhaul, HD GUI, Lantern Engine, Dreamcast Characters Pack, SA1 DLC content, Time of Day, Input Mod, Pause Hide, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music." TabIndex="4" />
+  <Label Name="SelectTypeText" Location="0, 0" Size="495, 23" Text="What kind of modded SADX setup would you like?" TabIndex="5" />
+  <RadioButton Name="Option_Enhanced" Location="0, 58" Size="495, 23" Text="Original SADX" TabIndex="6" />
+  <RadioButton Name="Option_DC" Location="0, 29" Size="495, 23" Text="Dreamcast mods" Checked="True" TabIndex="7" />
+</Dialog>

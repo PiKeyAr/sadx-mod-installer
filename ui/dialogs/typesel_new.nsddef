@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="TypeSel" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="Dialog subtitle...">
+  <CheckBox Name="CheckBox_WindowTitle" Location="6, 238" Size="272, 24" Text="Change window title to &quot;Sonic Adventure&quot;" TabIndex="0" />
+  <RadioButton Name="RadioButton_SettingsFailsafe" Location="314, 268" Size="232, 24" Text="Use failsafe Mod Loader settings" TabIndex="1" />
+  <RadioButton Name="RadioButton_SettingsManual" Location="314, 238" Size="232, 24" Text="Configure Mod Loader settings manually" TabIndex="2" />
+  <RadioButton Name="RadioButton_SettingsOptimal" Location="314, 208" Size="232, 24" Text="Use optimal Mod Loader settings" Checked="True" TabIndex="3" />
+  <CheckBox Name="CheckBox_ShowAdvanced" Location="6, 208" Size="272, 24" Text="Show advanced options" TabIndex="4" />
+  <GroupBox Name="GroupBox_InstallerMode" Location="0, 23" Size="300, 96" Text="Installer mode" TabIndex="5">
+    <RadioButton Name="Option_Guide" Location="6, 19" Size="293, 24" Text="Guide mode - select this if unsure" Font="Microsoft Sans Serif, 8.25pt, style=Bold" Checked="True" TabIndex="0" />
+    <RadioButton Name="Option_Preset" Location="6, 44" Size="148, 24" Text="Preset mode" TabIndex="1" />
+    <RadioButton Name="Option_Custom" Location="6, 69" Size="148, 24" Text="Custom mode" TabIndex="2" />
+  </GroupBox>
+  <GroupBox Name="GroupBox_Presets" Location="308, 23" Size="300, 96" Text="Presets" TabIndex="6">
+    <RadioButton Name="Option_DC" Location="6, 19" Size="148, 23" Text="Dreamcast" Checked="True" TabIndex="0" />
+    <RadioButton Name="Option_Enhanced" Location="6, 44" Size="148, 23" Text="Enhanced SADX" TabIndex="1" />
+    <RadioButton Name="Option_Minimal" Location="6, 69" Size="148, 24" Text="Minimal" TabIndex="2" />
+  </GroupBox>
+  <CheckBox Name="CheckBox_Preserve" Location="6, 268" Size="272, 24" Text="Preserve individual mod settings (if any)" Checked="True" TabIndex="7" />
+  <GroupBox Name="GroupBox_TypeDesc" Location="0, 125" Size="608, 81" Text="Description" TabIndex="8">
+    <Label Name="TypeComment" Location="6, 18" Size="596, 60" Text="These mods will make SADX look more like the original Dreamcast version of SA1." TabIndex="0" />
+  </GroupBox>
+  <CheckBox Name="CheckBox_InstallIcon" Location="6, 298" Size="320, 24" Text="Choose a custom icon for sonic.exe" TabIndex="9" />
+  <Label Name="SelectTypeText" Location="0, 0" Size="495, 23" Text="Select the preferred kind of modded SADX setup." TabIndex="10" />
+</Dialog>

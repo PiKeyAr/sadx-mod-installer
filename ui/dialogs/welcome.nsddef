@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.5.0.0
+https://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="WelcomePage" Title="Mod selection guide" DialogUI="custom" DialogID="1044" Size="608, 322" Subtitle="Check the checkbox if you want to install this mod. The screenshot is clickable." BackColor="Window">
+  <Label Name="Welcome" Location="178, 90" Size="424, 33" Text="Welcome to Sonic Adventure DX Mod Installer!" Font="Microsoft Sans Serif, 14.25pt" TabIndex="0" />
+  <Label Name="WelcomeText" Location="179, 148" Size="424, 142" Text="This program will install MainMemory's SADX Mod Loader and a selection of mods by several creators.&#xD;&#xA;&#xD;&#xA;A default installation with all mods will add approximately 1.3GB to the size of your SADX folder.&#xD;&#xA;&#xD;&#xA;If you use the web version of this installer, make sure there is also at least 1GB available on the drive with sadx_setup.exe&#xD;&#xA;&#xD;&#xA;Click Next to continue." TabIndex="1" />
+  <Bitmap Name="Banner" Location="0, 0" Size="164, 314" ImageFilename="G:\GitHub\sadx-mod-installer\resources\banner.bmp" Stretched="True" TabIndex="2" />
+</Dialog>

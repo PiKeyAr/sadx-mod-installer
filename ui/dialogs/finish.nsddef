@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.5.0.0
+https://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="FinishPage" Title="Mod selection guide" DialogUI="custom" DialogID="1044" Size="608, 434" Subtitle="Check the checkbox if you want to install this mod. The screenshot is clickable." BackColor="Window">
+  <Link Name="Link_Dreamcastify" Location="179, 358" Size="385, 18" Text="Visit Dreamcastify - a website about SADX downgrades" TabIndex="0" />
+  <Link Name="Link_Discord" Location="179, 326" Size="385, 18" Text="Join SADX modding Discord server" TabIndex="1" />
+  <Link Name="Link_Twitter" Location="179, 294" Size="385, 18" Text="PkR's Twitter" TabIndex="2" />
+  <Link Name="Link_MoreMods" Location="179, 262" Size="385, 18" Text="More SADX mods" TabIndex="3" />
+  <CheckBox Name="CheckBox_CreateShortcuts" Location="179, 210" Size="384, 21" Text="Create desktop shortcuts" TabIndex="4" />
+  <CheckBox Name="CheckBox_RunLauncher" Location="179, 183" Size="384, 21" Text="Change controls and settings with SADX Launcher" TabIndex="5" />
+  <CheckBox Name="CheckBox_RunSADX" Location="179, 156" Size="384, 21" Text="Run Sonic Adventure DX" TabIndex="6" />
+  <Label Name="FinishTitle" Location="179, 22" Size="424, 33" Text="Installation complete!" Font="Microsoft Sans Serif, 14.25pt, style=Bold" TabIndex="7" />
+  <Label Name="FinishMessage" Location="179, 68" Size="424, 61" Text="You can now play SADX with the mods you have installed.&#xD;&#xA;&#xD;&#xA;The files used by this installer have been saved in the 'instdata' folder. You can keep it to use the installer offline later, or delete it to save space." TabIndex="8" />
+  <Bitmap Name="Banner" Location="0, 0" Size="164, 314" ImageFilename="G:\GitHub\sadx-mod-installer\resources\banner.bmp" Stretched="True" TabIndex="9" />
+</Dialog>

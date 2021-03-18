@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="iconselect" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="531, 301" Subtitle="Dialog subtitle...">
+  <Label Name="Label4" Location="489, 103" Size="40, 24" Text="4" TabIndex="0" />
+  <Label Name="Label3" Location="354, 103" Size="40, 24" Text="3" TabIndex="1" />
+  <Label Name="Label2" Location="221, 103" Size="40, 24" Text="2" TabIndex="2" />
+  <Label Name="Label1" Location="84, 103" Size="40, 24" Text="1" TabIndex="3" />
+  <Bitmap Name="Bitmap_SADXGC" Location="330, 24" Size="64, 64" ImageFilename="C:\Users\PkR\Desktop\64sadxgc.bmp" TabIndex="4" />
+  <Bitmap Name="Bitmap_SADXPC" Location="465, 24" Size="64, 64" ImageFilename="C:\Users\PkR\Desktop\64sadxpc.bmp" TabIndex="5" />
+  <Bitmap Name="Bitmap_SA1Save" Location="60, 24" Size="64, 64" ImageFilename="C:\Users\PkR\Desktop\SA1Icon-FINAL-64.bmp" TabIndex="6" />
+  <Bitmap Name="Bitmap_SA1Box" Location="197, 24" Size="64, 64" ImageFilename="C:\Users\PkR\Desktop\icon64.bmp" TabIndex="7" />
+  <RadioButton Name="Button_SADXPC" Location="12, 239" Size="223, 24" Text="4 - Do not change the icon" TabIndex="8" />
+  <RadioButton Name="Button_SADXGC" Location="12, 209" Size="249, 24" Text="3 - SADX Gamecube save icon" TabIndex="9" />
+  <RadioButton Name="Button_SA1Box" Location="12, 179" Size="266, 24" Text="2 - SA1 box art icon" TabIndex="10" />
+  <RadioButton Name="Button_SA1Save" Location="12, 146" Size="302, 27" Text="1 - SA1 save icon recreation by McAleeCh" Checked="True" TabIndex="11" />
+</Dialog>

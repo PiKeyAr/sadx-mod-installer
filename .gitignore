@@ -1,0 +1,41 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs
+/instdata
+/.vscode
+/tools/SADXLauncher/mods
+/tools/SADXLauncher/sonicDX.ini
+*.001
+/tools/SteamHelper/obj
+/tools/SteamHelper/.vs/SteamHelper/v16
+tools/SteamHelper/bin
+/Output

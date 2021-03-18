@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="options" Title="Mod Loader configuration" DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="SADX/Mod Loader settings. You can always change them later in the Mod Manager.">
+  <GroupBox Name="GroupBox3" Location="360, 0" Size="233, 100" Text="Other options" TabIndex="0">
+    <CheckBox Name="PauseCheckbox" Location="16, 62" Size="181, 24" Text="Pause when inactive" TabIndex="0" />
+    <CheckBox Name="UIScalingCheckbox" Location="16, 29" Size="181, 24" Text="Enable UI scaling" TabIndex="1" />
+  </GroupBox>
+  <GroupBox Name="GroupBox2" Location="360, 100" Size="233, 180" Text="Update options" TabIndex="1">
+    <TextBox Name="UpdateDaysCount" Location="143, 122" Size="68, 20" Text="1" MaxLength="3" TabIndex="0" />
+    <CheckBox Name="ModUpdatesCheckbox" Location="14, 60" Size="197, 24" Text="Check for mod updates" TabIndex="1" />
+    <CheckBox Name="UpdatesCheckbox" Location="14, 30" Size="149, 24" Text="Check for updates" TabIndex="2" />
+    <ComboBox Name="UpdateBox" Location="14, 122" TabIndex="3">
+      <Items>
+        <value>Always</value>
+        <value>Hours</value>
+        <value>Days</value>
+        <value>Weeks</value>
+      </Items>
+    </ComboBox>
+    <Label Name="Label1" Location="14, 100" Size="154, 18" Text="Update frequency" TabIndex="4" />
+  </GroupBox>
+  <GroupBox Name="GroupBox1" Location="0, 0" Size="320, 280" Text="Display options" TabIndex="2">
+    <ComboBox Name="ClippingBox" Location="180, 222" TabIndex="0">
+      <Items>
+        <value>Far (best)</value>
+        <value>Medium</value>
+        <value>Low</value>
+      </Items>
+    </ComboBox>
+    <Label Name="Label3v" Location="180, 200" Size="128, 18" Text="Clipping distance" TabIndex="1" />
+    <ComboBox Name="FramerateBox" Location="20, 222" TabIndex="2">
+      <Items>
+        <value>60 FPS</value>
+        <value>30 FPS</value>
+        <value>15 FPS</value>
+      </Items>
+    </ComboBox>
+    <Label Name="Label2" Location="20, 200" Size="100, 18" Text="Framerate" TabIndex="3" />
+    <Label Name="xLabel" Location="74, 57" Size="13, 23" Text="x" TabIndex="4" />
+    <Label Name="ScreenModeLabel" Location="180, 30" Size="100, 18" Text="Screen mode" TabIndex="5" />
+    <TextBox Name="YRes" Location="90, 54" Size="48, 20" TabIndex="6" />
+    <Label Name="ResolutionLabel" Location="20, 30" Size="100, 18" Text="Resolution" TabIndex="7" />
+    <CheckBox Name="ScaleCheckBox" Location="20, 131" Size="275, 24" Text="Scale to screen (for downsampling)" TabIndex="8" />
+    <ComboBox Name="ScreenModeBox" Location="180, 52" TabIndex="9">
+      <Items>
+        <value>Windowed</value>
+        <value>Fullscreen</value>
+      </Items>
+    </ComboBox>
+    <TextBox Name="XRes" Location="20, 54" Size="48, 20" MaxLength="4" TabIndex="10" />
+    <CheckBox Name="VSyncCheckBox" Location="20, 161" Size="66, 24" Text="VSync" TabIndex="11" />
+    <CheckBox Name="BorderlessCheckBox" Location="20, 101" Size="178, 24" Text="Borderless fullscreen" TabIndex="12" />
+  </GroupBox>
+</Dialog>

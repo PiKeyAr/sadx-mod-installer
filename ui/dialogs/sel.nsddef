@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="sel" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="640, 360" Subtitle="Dialog subtitle...">
+  <Label Name="OfflineText" Location="0, 206" Size="495, 23" Text="If you need to install the mods offline, pick the second option." TabIndex="0" />
+  <Label Name="UpdateText2" Location="0, 46" Size="422, 23" Text="The mods will be updated only if new versions are available." TabIndex="1" />
+  <Label Name="UpdatesText" Location="0, 0" Size="586, 23" Text="Would you like to download the latest versions of mods if any updates are available?" TabIndex="2" />
+  <RadioButton Name="DontCheckUpdates" Location="0, 134" Size="436, 23" Text="Don't check for updates: only download missing files" TabIndex="3" />
+  <RadioButton Name="CheckUpdates" Location="0, 105" Size="436, 23" Text="Check for updates: update Mod Loader and mods if necessary" Checked="True" TabIndex="4" />
+</Dialog>

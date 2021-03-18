@@ -1,0 +1,63 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>1.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4b36a85f-cea2-44c9-b462-85948260fffb</ProjectGuid>
+    <AssemblyName>sadx-mod-installer</AssemblyName>
+    <Name>sadx-mod-installer</Name>
+    <RootNamespace>sadx-mod-installer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>
+    </OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>
+    </OutputPath>
+    <CompilerNoCD />
+    <CompilerNoConfig />
+    <CompilerPriority>/P2 </CompilerPriority>
+    <CompilerRaw />
+    <CompilerWarningsX />
+    <CompilerPPO />
+    <CompilerSafePPO />
+    <UserSymbolsDefine />
+    <UserSymbolsExecute />
+    <LaunchToolBeforeBuild />
+    <LaunchToolAfterBuild />
+    <RunInstaller>Yes</RunInstaller>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Script.nsi">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FunctionsGame.nsh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FunctionsMisc.nsh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FunctionsMods.nsh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MyPages.nsh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MySections.nsh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Variables.nsh">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\VisualInstaller\NSISProject.targets" />
+</Project>

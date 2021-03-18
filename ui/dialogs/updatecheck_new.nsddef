@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="sel" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="Dialog subtitle..." ExStyle="WS_EX_ACCEPTFILES">
+  <Label Name="OfflineText" Location="0, 287" Size="495, 24" Text="For offline installation, pick the second option." TabIndex="0" />
+  <Label Name="UpdatesText" Location="0, 0" Size="586, 143" Text="Would you like to check for updates?&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;This installer, SADX Mod Loader and the mods are all works in progress. Updates fix bugs and add new features. &#xD;&#xA;&#xD;&#xA;It's generally a good idea to keep your mods up to date." TabIndex="1" />
+  <RadioButton Name="DontCheckUpdates" Location="0, 209" Size="436, 24" Text="Don't check for updates: only download missing files" TabIndex="2" />
+  <RadioButton Name="CheckUpdates" Location="0, 179" Size="436, 24" Text="Check for updates" Checked="True" TabIndex="3" />
+</Dialog>

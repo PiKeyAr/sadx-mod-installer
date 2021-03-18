@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="Additional" Title="Additional mods" DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="Check the checkboxes for mods you want to install" ExStyle="WS_EX_ACCEPTFILES">
+  <Label Name="ModsDesc" Location="0, 0" Size="594, 51" Text="These mods introduce gameplay changes and non-visual improvements. &#xD;&#xA;&#xD;&#xA;Select which mods you want to install." TabIndex="0" />
+  <CheckBox Name="CheckBox_SoundOverhaul" Location="0, 139" Size="609, 24" Text="Install Sound Overhaul 2 to improve sound quality and restore missing sounds" Checked="True" TabIndex="1" />
+  <CheckBox Name="CheckBox_DLCs" Location="0, 199" Size="609, 24" Text="Install the DLCs mod to add SA1 Dreamcast holiday events and challenges" TabIndex="2" />
+  <CheckBox Name="CheckBox_SuperSonic" Location="0, 169" Size="609, 24" Text="Install the Super Sonic mod to be able to transform into Super Sonic in Action Stages" TabIndex="3" />
+</Dialog>

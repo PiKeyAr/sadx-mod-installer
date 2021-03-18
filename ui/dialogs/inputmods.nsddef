@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.4.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="InputMods_sel" Title="Dialog title..." DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="Dialog subtitle..." ExStyle="WS_EX_ACCEPTFILES">
+  <CheckBox Name="CheckBox_RunRemapperConfigTool" Location="0, 263" Size="385, 24" Text="Run the config tool to change controls" TabIndex="0" Enabled="False" />
+  <RadioButton Name="RadioButton_NoInputMods" Location="0, 207" Size="436, 24" Text="Don't install the Input Mod" TabIndex="1" />
+  <Label Name="InputModsText" Location="0, 0" Size="586, 143" Text="SADX (2004) doesn't work with many modern controllers. The vanilla version also doesn't let you change default keyboard keys.&#xD;&#xA;&#xD;&#xA;SonicFreak94's Input Mod adds proper XInput support and fixes issues with XInput and some DInput controllers. It also makes it possible to remap keyboard controls. This installer includes a tool to configure the Input Mod easier.&#xD;&#xA;&#xD;&#xA;If you play SADX with a reasonably modern controller or want to remap keys, select the Input Mod. If you have an older DInput controller it might work without the Input Mod." TabIndex="2" />
+  <RadioButton Name="RadioButton_InputMod" Location="0, 179" Size="436, 24" Text="Install the Input Mod by SonicFreak94" Checked="True" TabIndex="3" />
+</Dialog>

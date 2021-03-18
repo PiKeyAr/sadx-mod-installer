@@ -1,0 +1,1 @@
+hashmyfiles /file "G:\Sonic\DCMods\AppLauncher\AppLauncher.exe" /SaveDirect /scomma "G:\Sonic\DCMods\AppLauncher\AppLauncher.crc"

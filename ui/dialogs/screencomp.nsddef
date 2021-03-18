@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file was created by NSISDialogDesigner 1.4.2.0
+http://coolsoft.altervista.org/nsisdialogdesigner
+Do not edit manually!
+-->
+<Dialog Name="ScreenCompare" Title="Mod selection guide" DialogUI="custom" DialogID="1018" Size="608, 322" Subtitle="Check the checkbox if you want to install this mod. The screenshot is clickable.">
+  <CheckBox Name="CheckBox1" Location="0, 292" Size="287, 24" Text="Install Lantern Engine" TabIndex="0" />
+  <Label Name="ModDescription" Location="0, 0" Size="600, 27" Text="The Lantern Engine mod recreates the Dreamcast version's lighting system in SADX PC. Lantern Engine makes the lighting on levels, objects and characters more vibrant and removes the excessive gloss on character models." TabIndex="1" />
+  <Bitmap Name="Bitmap1" Location="0, 30" Size="600, 256" ImageFilename="G:\sadx_inst\compare\dcconv_off_600.bmp" Stretched="True" TabIndex="2" />
+</Dialog>
