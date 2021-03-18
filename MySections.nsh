@@ -622,6 +622,7 @@ fullscreendone:
 	RmDir /r "$INSTDIR\osx32"
 	RmDir /r "$INSTDIR\win64"
 	RmDir /r "$INSTDIR\tools"
+	IfFileExists ("$INSTDIR\system\RE-US.mpg") 0 +2
 	RmDir /r "$INSTDIR\DLC"
 	RmDir /r "$INSTDIR\Font"
 	RmDir /r "$INSTDIR\Shader"
