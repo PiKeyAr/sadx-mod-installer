@@ -599,8 +599,6 @@ fullscreendone:
 	Delete "$INSTDIR\system\TUTO_CMN_S.pvm"
 	Delete "$INSTDIR\system\TUTO_CMN_S_R.pvm"
 	Delete "$INSTDIR\install.vdf"
-	IfFileExists ("$INSTDIR\system\SA1.mpg") 0 +2
-	Delete "$INSTDIR\system\*.sfd"
 	RmDir /r "$INSTDIR\system\BackGround"
 	RmDir /r "$INSTDIR\system\BigEndian"
 	RmDir /r "$INSTDIR\system\CreateNewFile"
@@ -622,12 +620,8 @@ fullscreendone:
 	RmDir /r "$INSTDIR\osx32"
 	RmDir /r "$INSTDIR\win64"
 	RmDir /r "$INSTDIR\tools"
-	IfFileExists ("$INSTDIR\system\RE-US.mpg") 0 +2
-	RmDir /r "$INSTDIR\DLC"
 	RmDir /r "$INSTDIR\Font"
 	RmDir /r "$INSTDIR\Shader"
-	IfFileExists ("$INSTDIR\system\SoundData\bgm\wma\option.adx") 0 +2
-	RmDir /r "$INSTDIR\SoundData"
 	Delete "$INSTDIR\Sonic Adventure DX.exe"
 	Delete "$INSTDIR\SEGA*.*"
 	Delete "$INSTDIR\sadx_snd.cmd"
@@ -638,6 +632,12 @@ fullscreendone:
 	Delete "$INSTDIR\sadxconvert_min.bat"
 	Delete "$INSTDIR\D3DX9_43.dll"
 	Delete "$INSTDIR\xinput9_1_0.dll"
+	IfFileExists "$INSTDIR\system\RE-US.mpg" 0 +2
+	RmDir /r "$INSTDIR\DLC"
+	IfFileExists "$INSTDIR\system\SoundData\bgm\wma\option.adx" 0 +2
+	RmDir /r "$INSTDIR\SoundData"
+	IfFileExists "$INSTDIR\system\SA1.mpg" 0 +2
+	Delete "$INSTDIR\system\SA*.sfd"
 SectionEnd
 
 Section $(SECTIONNAME_LAUNCHER) SECTION_LAUNCHER
