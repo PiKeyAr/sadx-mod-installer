@@ -247,6 +247,7 @@ namespace SteamHelper
                 {
                     WriteLog("Could not locate the DLC folder.");
                     MessageBox.Show("Could not locate the DLC folder at " + Path.Combine(Environment.CurrentDirectory, "DLC") + ".\nVerify integrity of your SADX installation and run the installer again.", "Error: FMV conversion failed", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                    return;
                 }
                 else
                 {
@@ -268,27 +269,29 @@ namespace SteamHelper
                     if (!File.Exists(Path.Combine(Environment.CurrentDirectory, "system", "RE-US.MPG")))
                         MessageBox.Show("Intro file conversion failed: " + Path.Combine(Environment.CurrentDirectory, "system", "RE-US.MPG") + ".\nVerify integrity of your SADX installation and run the installer again.", "Error: FMV conversion failed", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 }
-                // Convert JP intro using FFMPEG
+            }
+            else
+                WriteLog("File RE-US.MPG already exists.");
+            // Convert JP intro using FFMPEG
+            if (!File.Exists(Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG")))
+            {
+                pProcess = new System.Diagnostics.Process();
+                WriteLog("Converting RE-JP.MPG");
+                pProcess.StartInfo.FileName = "ffmpeg.exe";
+                pProcess.StartInfo.Arguments = "-y -hide_banner -loglevel error -f mpeg -r 29.97 -i re-jp2.sfd -vcodec mpeg1video -aspect 4/3 -acodec mp2 -b:v 5800000 RE-JP.MPG";
+                pProcess.StartInfo.UseShellExecute = false;
+                pProcess.StartInfo.RedirectStandardError = true;
+                pProcess.StartInfo.WorkingDirectory = Path.Combine(Environment.CurrentDirectory, "DLC");
+                pProcess.StartInfo.CreateNoWindow = true;
+                pProcess.Start();
+                strOutput = pProcess.StandardError.ReadToEnd();
+                WriteLog(strOutput);
+                pProcess.WaitForExit();
+                if (File.Exists(Path.Combine(Environment.CurrentDirectory, "DLC", "RE-JP.MPG"))) File.Move(Path.Combine(Environment.CurrentDirectory, "DLC", "RE-JP.MPG"), Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG"));
+                else
+                    WriteLog("Error converting RE-JP.MPG.");
                 if (!File.Exists(Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG")))
-                {
-                    pProcess = new System.Diagnostics.Process();
-                    WriteLog("Converting RE-JP.MPG");
-                    pProcess.StartInfo.FileName = "ffmpeg.exe";
-                    pProcess.StartInfo.Arguments = "-y -hide_banner -loglevel error -f mpeg -r 29.97 -i re-jp2.sfd -vcodec mpeg1video -aspect 4/3 -acodec mp2 -b:v 5800000 RE-JP.MPG";
-                    pProcess.StartInfo.UseShellExecute = false;
-                    pProcess.StartInfo.RedirectStandardError = true;
-                    pProcess.StartInfo.WorkingDirectory = Path.Combine(Environment.CurrentDirectory, "DLC");
-                    pProcess.StartInfo.CreateNoWindow = true;
-                    pProcess.Start();
-                    strOutput = pProcess.StandardError.ReadToEnd();
-                    WriteLog(strOutput);
-                    pProcess.WaitForExit();
-                    if (File.Exists(Path.Combine(Environment.CurrentDirectory, "DLC", "RE-JP.MPG"))) File.Move(Path.Combine(Environment.CurrentDirectory, "DLC", "RE-JP.MPG"), Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG"));
-                    else
-                        WriteLog("Error converting RE-JP.MPG.");
-                    if (!File.Exists(Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG")))
-                        MessageBox.Show("Intro file conversion failed: " + Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG") + ".\nVerify integrity of your SADX installation and run the installer again.", "Error: FMV conversion failed", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-                }
+                    MessageBox.Show("Intro file conversion failed: " + Path.Combine(Environment.CurrentDirectory, "system", "RE-JP.MPG") + ".\nVerify integrity of your SADX installation and run the installer again.", "Error: FMV conversion failed", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             }
             else
                 WriteLog("File RE-JP.MPG already exists.");
@@ -667,7 +670,9 @@ namespace SteamHelper
 				}
 				catch (Exception ex)
 				{
-					DialogResult result;
+                    logger.Flush();
+                    logger.Close();
+                    DialogResult result;
 					result = MessageBox.Show("Error running Steam Conversion Helper: \n" + ex.Message.ToString() + "\n\nSome files in the game's folder may be blocked by another program, or your anti-virus is interfering. Close all programs accessing the game's folder and try again.\n\nIf you skip this step, the game won't have sound, music and videos.\n\nTry again?", "Error running Steam Conversion Helper", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 					if (result == DialogResult.Cancel) System.Environment.Exit(0);
 				}
