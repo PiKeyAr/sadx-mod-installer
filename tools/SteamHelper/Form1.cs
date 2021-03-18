@@ -617,7 +617,10 @@ namespace SteamHelper
 				{
 					UpdateProgressLabel("Creating log file...");
 					logger = File.CreateText(Path.Combine(Environment.CurrentDirectory, "SADX Steam Conversion.log"));
-					ActivateLabel(labelSaves, "  Converting save data...");
+                    UpdateProgressLabel("Registering URL handler...");
+                    WriteLog("Registering URL handler...");
+                    addURLHandler();
+                    ActivateLabel(labelSaves, "  Converting save data...");
 					ConvertSave();
 					SetProgress(10);
 					DoneLabel(labelSaves, "✓ Converting save data...");
@@ -669,8 +672,32 @@ namespace SteamHelper
 					if (result == DialogResult.Cancel) System.Environment.Exit(0);
 				}
 			}
-			System.Environment.Exit(0);
+            System.Environment.Exit(0);
 		}
+
+        // Code from SADX Mod Loader
+        private void addURLHandler()
+        {
+            try
+            {
+                using (var hkcr = Microsoft.Win32.Registry.ClassesRoot)
+                using (var key = hkcr.CreateSubKey("sadxmm"))
+                {
+                    key.SetValue(null, "URL:SADX Mod Manager Protocol");
+                    key.SetValue("URL Protocol", string.Empty);
+                    using (var k2 = key.CreateSubKey("DefaultIcon"))
+                        k2.SetValue(null, Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SADXModManager.exe") + ",1");
+                    using (var k3 = key.CreateSubKey("shell"))
+                    using (var k4 = k3.CreateSubKey("open"))
+                    using (var k5 = k4.CreateSubKey("command"))
+                        k5.SetValue(null, $"\"{Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SADXModManager.exe")}\" \"%1\"");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to registed SADX Mod Manager URL handler:\n" + ex.Message.ToString());
+            }
+        }
 
         // Code from SA Tools
 		internal class FENTRY
