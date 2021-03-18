@@ -1,4 +1,4 @@
-# SADX Mod Installer
+# SADX Launcher
 
 This tool replaces the default launcher for Sonic Adventure DX (Steam). 
 

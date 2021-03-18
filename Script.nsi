@@ -129,7 +129,7 @@ InstType $(INSTTYPE_MIN)
 ; Initialization
 Function .onInit
 	!insertmacro MUI_LANGDLL_DISPLAY
-	StrCpy $BuildNumber "Build 31"
+	StrCpy $BuildNumber "Build 32"
 	; Delete old mods
 	${If} ${FileExists} "$EXEDIR\instdata\OptionalMods.7z"
 		Delete "$EXEDIR\instdata\OptionalMods.7z"
