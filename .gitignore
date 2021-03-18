@@ -26,7 +26,9 @@
 *.lib
 
 # Executables
-*.exe
+sadx_setup.exe
+SteamHelper.exe
+AppLauncher.exe
 *.out
 *.app
 /.vs
