@@ -35,7 +35,11 @@
 /tools/SADXLauncher/mods
 /tools/SADXLauncher/sonicDX.ini
 *.001
+*.002
+*.003
+*.004
+*.005
 /tools/SteamHelper/obj
 /tools/SteamHelper/.vs/SteamHelper/v16
-tools/SteamHelper/bin
+/tools/SteamHelper/bin
 /Output
