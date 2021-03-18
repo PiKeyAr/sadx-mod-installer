@@ -242,11 +242,11 @@ FunctionEnd
 Function EnableInstallIcon
 	${NSD_SetText} $hCtl_TypeSel_TypeComment $(DESC_ICON)
 	${If} $EnableCustomIcon != "1"
-	StrCpy $EnableCustomIcon "1"
+		StrCpy $EnableCustomIcon "1"
 	${NSD_Check} $hCtl_TypeSel_CheckBox_InstallIcon
 	${Else}
-	${NSD_UnCheck} $hCtl_TypeSel_CheckBox_InstallIcon
-	StrCpy $EnableCustomIcon "0"
+		${NSD_UnCheck} $hCtl_TypeSel_CheckBox_InstallIcon
+		StrCpy $EnableCustomIcon "0"
 	${EndIf}
 FunctionEnd
 
@@ -386,10 +386,10 @@ Function CheckCustom
 	checksteam:
 		IfFileExists "$INSTDIR\*.vdf" addsteamachievements endchk
 	addsteamachievements:
-			${If} $InstallType != "2"
-				!insertmacro SelectSection ${SECTION_STEAM}
-			${EndIf}
-			goto endchk
+		${If} $InstallType != "2"
+			!insertmacro SelectSection ${SECTION_STEAM}
+		${EndIf}
+		goto endchk
 	endchk:
 		; Hide the components window if the Custom profile isn't selected
 		${If} $InstallType != "3"
@@ -410,7 +410,7 @@ Function CreateShortcuts
 	${EndIf}
 	${NSD_GetState} $hCtl_FinishPage_CheckBox_RunLauncher $0
 	${If} $Final_Launcher <> 0
-		Call RunModManager
+		Call RunLauncher
 	${EndIf}
 	Quit
 FunctionEnd
@@ -421,37 +421,37 @@ Function CheckDir
 	goto detectsteam
 
 	notsteammaybe:
-	SetRegView 32
-	ReadRegStr $InstallPathTemp3 HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\SEGA\Dreamcast Collection" "DisplayIcon"
-	StrCmp $InstallPathTemp3 "" sadx2004 0
-	StrCpy $InstallPathTemp2 $InstallPathTemp3 -13
-	StrCpy $InstallPathTemp2 "$InstallPathTemp2\Sonic Adventure DX"
-	StrCpy $InstallPath $InstallPathTemp2
+		SetRegView 32
+		ReadRegStr $InstallPathTemp3 HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\SEGA\Dreamcast Collection" "DisplayIcon"
+		StrCmp $InstallPathTemp3 "" sadx2004 0
+		StrCpy $InstallPathTemp2 $InstallPathTemp3 -13
+		StrCpy $InstallPathTemp2 "$InstallPathTemp2\Sonic Adventure DX"
+		StrCpy $InstallPath $InstallPathTemp2
 	goto setpath
 
 	sadx2004:
-	SetRegView 32
-	ReadRegStr $InstallPathTemp HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\SONICADVDX" "UninstallString"
-	StrCpy $InstallPath $InstallPathTemp -12
-	StrCmp $InstallPath "" notfound setpath
-	goto setpath
+		SetRegView 32
+		ReadRegStr $InstallPathTemp HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\SONICADVDX" "UninstallString"
+		StrCpy $InstallPath $InstallPathTemp -12
+		StrCmp $InstallPath "" notfound setpath
+		goto setpath
 	
 	detectsteam:
-	${If} ${RunningX64}
-		SetRegView 64
-	${EndIf}
-	ReadRegStr $InstallPath HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250" "InstallLocation"
-	StrCmp $InstallPath "" 0 setpath
-	SetRegView 32
-	ReadRegStr $InstallPath HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250" "InstallLocation"
-	StrCmp $InstallPath "" notsteammaybe setpath
-	goto setpath
+		${If} ${RunningX64}
+			SetRegView 64
+		${EndIf}
+		ReadRegStr $InstallPath HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250" "InstallLocation"
+		StrCmp $InstallPath "" 0 setpath
+		SetRegView 32
+		ReadRegStr $InstallPath HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250" "InstallLocation"
+		StrCmp $InstallPath "" notsteammaybe setpath
+		goto setpath
 
 	notfound:
-	StrCpy $DirTextThing $(MSG_FOLDER_NOTFOUND)
-	StrCpy $InstallPath "C:\Games\SonicAdventureDX"
-	goto setpath
+		StrCpy $DirTextThing $(MSG_FOLDER_NOTFOUND)
+		StrCpy $InstallPath "C:\Games\SonicAdventureDX"
+		goto setpath
 	
 	setpath:
-	StrCpy $INSTDIR $InstallPath
+		StrCpy $INSTDIR $InstallPath
 FunctionEnd

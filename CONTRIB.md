@@ -12,9 +12,10 @@ There is no license for SADX Mod Installer, and I cannot prevent anyone from doi
 I accept the following contributions:
 * Translations, as well as revisions and corrections to existing translations (see below)
 * Code optimizations/coding style updates (as long as they are consistent with the rest of the project)
+* Updates to the ["More mods" page](https://dcmods.unreliable.network/sadxmods), including new mods and formatting
 * New functionality of any kind except new mods
 
-At the moment I'm not looking to add new mods to the installer.
+At the moment I'm not looking to add new mods to the installer. However, the "More mods" page can be updated with new mods.
 
 ## Translating SADX Mod Installer
 You can contribute a translation by sending me the following files translated in your language:

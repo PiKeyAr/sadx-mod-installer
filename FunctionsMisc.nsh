@@ -65,7 +65,7 @@ Function RunSADX
 	Exec "$INSTDIR\sonic.exe"
 FunctionEnd
 
-Function RunModManager
+Function RunLauncher
 	IfFileExists "$INSTDIR\AppLauncher.exe" +1 +2
 	Exec "$INSTDIR\AppLauncher.exe"
 FunctionEnd
