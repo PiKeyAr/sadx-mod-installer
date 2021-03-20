@@ -204,6 +204,7 @@ Section $(SECTIONNAME_MODLOADER) SECTION_MODLOADER
 SectionIn 1 2 3
 ${nsProcess::KillProcess} "sonic.exe" $R0
 ${nsProcess::KillProcess} "sadx.exe" $R0
+${nsProcess::KillProcess} "Sonic Adventure DX.exe" $R0
 ${nsProcess::KillProcess} "SADXModManager.exe" $R0
 ${nsProcess::KillProcess} "AppLauncher.exe" $R0
 goto install
