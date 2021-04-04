@@ -616,7 +616,7 @@ Function fnc_FinishPage_Create
 	${NSD_CreateBitmap} 0u 0u 108u 193u ""
 	Pop $hCtl_FinishPage_Banner
 	SetCtlColors $hCtl_FinishPage_Banner 0x000000 0xFFFFFF
-	File "/oname=$PLUGINSDIR\banner.jpg" "G:\GitHub\sadx-mod-installer\resources\banner.jpg"
+	File "/oname=$PLUGINSDIR\banner.jpg" "resources\banner.jpg"
 	${NSD_SetStretchedImageOLE} $hCtl_FinishPage_Banner "$PLUGINSDIR\banner.jpg" $hCtl_FinishPage_Banner_hImage
 FunctionEnd
 

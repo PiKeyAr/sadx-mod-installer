@@ -3,19 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{040ECBDE-118F-47B7-BE98-E6E3FFCE59D0}") = "sadx-mod-installer", "sadx-mod-installer.nsisproj", "{4B36A85F-CEA2-44C9-B462-85948260FFFB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E99D8962-10BA-46C2-8C82-29A861D12C41}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionsGame.nsh = FunctionsGame.nsh
+		FunctionsMisc.nsh = FunctionsMisc.nsh
+		FunctionsMods.nsh = FunctionsMods.nsh
+		MyPages.nsh = MyPages.nsh
+		MySections.nsh = MySections.nsh
+		Script.nsi = Script.nsi
+		Variables.nsh = Variables.nsh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Languages", "Languages", "{26D29EF6-D177-4AD6-8FEB-8B157A221703}"
+	ProjectSection(SolutionItems) = preProject
+		lang\English.nsh = lang\English.nsh
+		lang\French.nsh = lang\French.nsh
+		lang\Italian.nsh = lang\Italian.nsh
+		lang\Japanese.nsh = lang\Japanese.nsh
+		lang\Korean.nsh = lang\Korean.nsh
+		lang\PortugueseBR.nsh = lang\PortugueseBR.nsh
+		lang\Russian.nsh = lang\Russian.nsh
+		lang\Spanish.nsh = lang\Spanish.nsh
+	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4B36A85F-CEA2-44C9-B462-85948260FFFB}.Debug|x86.ActiveCfg = Debug|x86
-		{4B36A85F-CEA2-44C9-B462-85948260FFFB}.Debug|x86.Build.0 = Debug|x86
-		{4B36A85F-CEA2-44C9-B462-85948260FFFB}.Release|x86.ActiveCfg = Release|x86
-		{4B36A85F-CEA2-44C9-B462-85948260FFFB}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
