@@ -45,7 +45,7 @@ ${Else}
 	SetRegView 32
 ${EndIf}
 ReadRegDWORD $NetFrameworkVersion HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Release"
-${If} $NetFrameworkVersion > "378389"
+${If} $NetFrameworkVersion > "528040"
 	goto skipnet
 ${EndIf}
 DetailPrint $(DE_E_NET)
