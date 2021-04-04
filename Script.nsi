@@ -19,6 +19,7 @@ ManifestDPIAware true
 !include "Locate.nsh"
 !include "nsDialogs.nsh"
 !include "X64.NSH"
+!include "WinVer.nsh"
 
 ; Custom includes
 !include Variables.nsh
@@ -129,6 +130,26 @@ InstType $(INSTTYPE_MIN)
 ; Initialization
 Function .onInit
 	!insertmacro MUI_LANGDLL_DISPLAY
+	; Check Windows version
+	StrCpy $IncompatibleOS "0"
+	; Not NT based
+	${IfNot} ${IsNT}
+		StrCpy $IncompatibleOS "1"
+	${EndIf}
+	; Not Windows 7 or later
+	${IfNot} ${AtLeastWin7}
+		StrCpy $IncompatibleOS "1"
+	${EndIf}
+	; Not SP1 on 7
+	${If} ${IsWin7}
+		${IfNot} ${AtLeastServicePack} 1
+			StrCpy $IncompatibleOS "1"
+		${EndIf}
+	${EndIf}
+	; Show incompatible OS message
+	StrCmp $IncompatibleOS "1" 0 +3
+	MessageBox MB_YESNO $(ERR_REQUIREDOS) IDYES +2 IDNO 0
+	Quit
 	StrCpy $BuildNumber "Build 33"
 	; Delete old mods
 	${If} ${FileExists} "$EXEDIR\instdata\OptionalMods.7z"

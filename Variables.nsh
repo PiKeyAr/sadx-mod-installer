@@ -1,4 +1,5 @@
 ; Variables - General
+Var /GLOBAL IncompatibleOS
 Var /GLOBAL BuildNumber
 Var /GLOBAL sonicexemd5
 Var /GLOBAL chrmodelsmd5
