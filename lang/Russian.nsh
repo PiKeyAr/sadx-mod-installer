@@ -195,7 +195,8 @@ LangString MSG_FINISH 1049 "Теперь вы можете играть в SADX 
 $\r$\nФайлы, использованные этим инсталлятором, были сохранены в папке 'instdata'. Вы можете оставить их для повторной установки оффлайн или удалить их, чтобы сэкономить место на диске."
 
 ;Errors
-LangString ERR_NET_MISSING 1049 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1049 "Обнаружена несовместимая версия ОС. Для работы программы требуется Windows 7 SP1 или новее.$\r$\nПродолжить?"
+LangString ERR_NET_MISSING 1049 "Для работы конвертера версии Steam требуется .NET Framework 4.8.$\r$\nПожалуйста, установите .NET Framework вручную и перезапустите инсталлятор."
 LangString ERR_D_RESOURCES 1049 "Ошибка загрузки данных: $DownloadErrorCode. Продолжить?"
 LangString ERR_D_DSOUND 1049 "Ошибка загрузки: $DownloadErrorCode. Sound Overhaul не будет работать корректно, пока файл dsound.dll не будет помещён в корневую папку SADX."
 LangString ERR_D_STEAM 1049 "Ошибка загрузки Steam Achievements: $DownloadErrorCode. Продолжить установку других модов?"
@@ -279,7 +280,7 @@ $\r$\n\
 SADX Launcher — программа для изменения настроек Mod Loader и настройки управления в Input Mod."
 LangString DESC_NET 1049 "Установить или обновить .NET Framework, который требуется для корректной работы SADX Mod Manager. $\r$\n\
 $\r$\n\
-Программа установки проверяет наличие .NET Framework 4.5 или выше перед загрузкой."
+Программа установки проверяет наличие .NET Framework 4.8 перед загрузкой."
 LangString DESC_RUNTIME 1049 "Установить или обновить Visual C++ 2010, 2012, 2013 и 2015/2017/2019 runtimes, которые требуются для корректной работы модов на базе DLL. $\r$\n\
 $\r$\n\
 Программа установки проверяет наличие Visual C++ runtimes перед загрузкой."
@@ -405,7 +406,7 @@ LangString DE_C_2010 1049 "Проверка установки SADX 2010..."
 LangString DE_E_TOOLS 1049 "Извлекаются программы..."
 LangString DE_C_TOOLS 1049 "Проверяются программы..."
 LangString DE_E_SCR 1049 "Извлечение скриптов..."
-LangString DE_E_VOICES 1049 "Установка дополнительной озвучки... 1049 "
+LangString DE_E_VOICES 1049 "Установка дополнительной озвучки..."
 LangString DE_SAVE 1049 "Копирование сохранений SADX 2010 в папку сохранений SADX 2004..."
 LangString DE_DPI 1049 "Добавление исключений High DPI/оптимизации полного экрана для sonic.exe..."
 LangString DE_FSOPT 1049 "Добавление исключений оптимизации полного экрана и DPI для sonic.exe..."
@@ -414,7 +415,7 @@ LangString DE_CLEANUP 1049 "Очистка..."
 LangString DE_E_LAUNCHER 1049 "Извлечение SADX Launcher..."
 LangString DE_CHECKNET 1049 "Проверка версии .NET Framework..."
 LangString DE_E_NET 1049 "Установка .NET Framework..."
-LangString DE_NETPRESENT 1049 ".NET Framework 4.5 или выше уже установлен ($NetFrameworkVersion)."
+LangString DE_NETPRESENT 1049 ".NET Framework 4.8 уже установлен ($NetFrameworkVersion)."
 LangString DE_C_VCC 1049 "Проверка Visual C++ runtimes и установка, если требуется..."
 LangString DE_E_VC2010 1049 "Извлечение Visual C++ 2010 runtime..."
 LangString DE_I_VC2010 1049 "Установка Visual C++ 2010 runtime..."

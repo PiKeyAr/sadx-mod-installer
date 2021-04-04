@@ -195,7 +195,8 @@ LangString MSG_FINISH 1041 "これでインストールした Mod でソニッ�
 $\r$\nこのインストーラーで使用したファイルは「instdata」フォルダに保存しています。後でオフラインでインストーラーを使用するために保管しておくこともできますし、容量節約のため削除することもできます。"
 
 ;Errors
-LangString ERR_NET_MISSING 1041 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1041 "Incompatible OS detected. This program requires Windows 7 SP1 or later to work properly.$\r$\nContinue?"
+LangString ERR_NET_MISSING 1041 "The Steam conversion tool requires .NET Framework 4.8 to be installed.$\r$\nPlease install .NET Framework manually and run the installer again."
 LangString ERR_D_RESOURCES 1041 "リソースデータのダウンロードに失敗しました: $DownloadErrorCode. 続けますか?"
 LangString ERR_D_DSOUND 1041 "ダウンロードに失敗しました: $DownloadErrorCode. dsound.dll がソニックアドベンチャー DX のメインフォルダに配置されるまで、Sound Overhaul は正常に機能しません。"
 LangString ERR_D_STEAM 1041 "Steam Achievements のダウンロードに失敗しました: $DownloadErrorCode. 別の Mod のインストールを続けますか?"
@@ -279,7 +280,7 @@ $\r$\n\
 SADX Launcher は Mod Loader の設定を変更したり、Input Mod による操作制御するためのツールです。"
 LangString DESC_NET 1041 "SADX Mod Manager を正常に動作させるのに必要な.NET Framework をインストールまたはアップデートします。 $\r$\n\
 $\r$\n\
-このインストーラーでは .NET Framework 4.5 以上がすでにインストールされているかどうかをダウンロードする前に確認します。"
+このインストーラーでは .NET Framework 4.8 がすでにインストールされているかどうかをダウンロードする前に確認します。"
 LangString DESC_RUNTIME 1041 "DLL ベースの Mod が正常に動作するために必要な Visual C++ 2010 / 2012 / 2013 / 2015 / 2017 / 2019 ランタイムをインストール / アップデートします。 $\r$\n\
 $\r$\n\
 このインストーラーでは Visual C++ ランタイムがすでにインストールされているかどうかをダウンロードする前に確認します。"
@@ -405,7 +406,7 @@ LangString DE_C_2010 1041 "ソニックアドベンチャー DX 2010年版 イ�
 LangString DE_E_TOOLS 1041 "ツール 展開中..."
 LangString DE_C_TOOLS 1041 "ツール 検証中..."
 LangString DE_E_SCR 1041 "スクリプト 展開中..."
-LangString DE_E_VOICES 1041 "追加ボイス インストール中... 1041 "
+LangString DE_E_VOICES 1041 "追加ボイス インストール中..."
 LangString DE_SAVE 1041 "2010年版ソニックアドベンチャー DX のセーブデータを 2004年版ソニックアドベンチャー DX のセーブデータフォルダーにコピー中..."
 LangString DE_DPI 1041 "sonic.exe へ高 DPI / フルスクリーン最適化の例外を追加中..."
 LangString DE_FSOPT 1041 "sonic.exe へフルスクリーン最適化と DPI の例外を追加中e..."
@@ -414,7 +415,7 @@ LangString DE_CLEANUP 1041 "クリーンアップ中..."
 LangString DE_E_LAUNCHER 1041 "SADX Launcher 展開中..."
 LangString DE_CHECKNET 1041 ".NET Framework バージョン チェック中..."
 LangString DE_E_NET 1041 ".NET Framework インストール中..."
-LangString DE_NETPRESENT 1041 ".NET Framework 4.5 以上がすでにインストールされています ($NetFrameworkVersion)。"
+LangString DE_NETPRESENT 1041 ".NET Framework 4.8 がすでにインストールされています ($NetFrameworkVersion)。"
 LangString DE_C_VCC 1041 "Visual C++ ランタイム チェック中、必要に応じてインストールします..."
 LangString DE_E_VC2010 1041 "Visual C++ 2010 ランタイム 展開中..."
 LangString DE_I_VC2010 1041 "Visual C++ 2010 ランタイム インストール中..."

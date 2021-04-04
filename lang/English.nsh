@@ -198,7 +198,8 @@ LangString MSG_FINISH 1033 "You can now play SADX with the mods you have install
 $\r$\nThe files used by this installer have been saved in the 'instdata' folder. You can keep it to use the installer offline later, or delete it to save space."
 
 ;Errors
-LangString ERR_NET_MISSING 1033 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1033 "Incompatible OS detected. This program requires Windows 7 SP1 or later to work properly.$\r$\nContinue?"
+LangString ERR_NET_MISSING 1033 "The Steam conversion tool requires .NET Framework 4.8 to be installed.$\r$\nPlease install .NET Framework manually and run the installer again."
 LangString ERR_D_RESOURCES 1033 "Resource data download failed: $DownloadErrorCode. Continue?"
 LangString ERR_D_DSOUND 1033 "Download failed: $DownloadErrorCode. Sound Overhaul will not function correctly until dsound.dll is placed into SADX main folder."
 LangString ERR_D_STEAM 1033 "Steam Achievements download failed: $DownloadErrorCode. Continue installing other mods?"
@@ -282,7 +283,7 @@ $\r$\n\
 SADX Launcher is a tool to change Mod Loader settings and configure controls for the Input Mod."
 LangString DESC_NET 1033 "Install or update .NET Framework, which is required for SADX Mod Manager to work properly. $\r$\n\
 $\r$\n\
-The installer checks if .NET Framework 4.5 or higher is already installed before downloading it."
+The installer checks if .NET Framework 4.8 is already installed before downloading it."
 LangString DESC_RUNTIME 1033 "Install/update Visual C++ 2010, 2012, 2013 and 2015/2017/2019 runtimes, which are needed for DLL-based mods to work properly. $\r$\n\
 $\r$\n\
 The installer checks if Visual C++ runtimes are already installed before downloading them."
@@ -408,7 +409,7 @@ LangString DE_C_2010 1033 "Checking integrity of SADX 2010 installation..."
 LangString DE_E_TOOLS 1033 "Extracting tools..."
 LangString DE_C_TOOLS 1033 "Verifying tools..."
 LangString DE_E_SCR 1033 "Extracting scripts..."
-LangString DE_E_VOICES 1033 "Installing additional voices... 1033 "
+LangString DE_E_VOICES 1033 "Installing additional voices..."
 LangString DE_SAVE 1033 "Copying SADX 2010 saves to SADX 2004 savedata folder..."
 LangString DE_DPI 1033 "Adding High DPI/fullscreen optimizations exception for sonic.exe..."
 LangString DE_FSOPT 1033 "Adding fullscreen optimization and DPI exception for sonic.exe..."
@@ -417,7 +418,7 @@ LangString DE_CLEANUP 1033 "Cleaning up..."
 LangString DE_E_LAUNCHER 1033 "Extracting SADX Launcher..."
 LangString DE_CHECKNET 1033 "Checking .NET Framework version..."
 LangString DE_E_NET 1033 "Installing .NET Framework..."
-LangString DE_NETPRESENT 1033 ".NET Framework 4.5 or higher is already installed ($NetFrameworkVersion)."
+LangString DE_NETPRESENT 1033 ".NET Framework 4.8 is already installed ($NetFrameworkVersion)."
 LangString DE_C_VCC 1033 "Checking Visual C++ runtimes and installing if necessary..."
 LangString DE_E_VC2010 1033 "Extracting Visual C++ 2010 runtime..."
 LangString DE_I_VC2010 1033 "Installing Visual C++ 2010 runtime..."

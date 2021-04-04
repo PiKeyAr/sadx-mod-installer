@@ -195,7 +195,8 @@ LangString MSG_FINISH 1042 "이제 설치한 모드로 SADX를 즐길 수 있습
 $\r$\n이 인스톨러가 사용한 파일은 'instdata' 폴더에 저장되었습니다. 나중에 인스톨러를 오프라인에서 사용하도록 보관하거나, 삭제하여 공간을 절약할 수 있습니다."
 
 ;Errors
-LangString ERR_NET_MISSING 1042 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1042 "Incompatible OS detected. This program requires Windows 7 SP1 or later to work properly.$\r$\nContinue?"
+LangString ERR_NET_MISSING 1042 "The Steam conversion tool requires .NET Framework 4.8 to be installed.$\r$\nPlease install .NET Framework manually and run the installer again."
 LangString ERR_D_RESOURCES 1042 "리소스 데이터 다운로드 실패: $DownloadErrorCode. 계속하시겠습니까?"
 LangString ERR_D_DSOUND 1042 "다운로드 실패: $DownloadErrorCode. 사운드 오버홀 모드는 Dsound.dll이 SADX 메인 폴더에 설치되기 전까지는 올바르게 작동되지 않습니다."
 LangString ERR_D_STEAM 1042 "Steam 도전과제 지원 모드 다운로드 실패: $DownloadErrorCode. 계속해서 다른 모드 설치를 진행하시겠습니까?"
@@ -279,7 +280,7 @@ $\r$\n\
 SADX 런처는 모드로더 설정을 변경하고 입력 모드의 컨트롤을 설정하는 도구입니다."
 LangString DESC_NET 1042 "SADX 모드 매니저가 제대로 작동하는 데 필요한 .NET Framework를 설치하거나 업데이트합니다. $\r$\n\
 $\r$\n\
-인스톨러가 다운로드하기 전에 .NET Framework 4.5 이상이 이미 설치되어 있는지 체크합니다."
+인스톨러가 다운로드하기 전에 .NET Framework 4.8 이상이 이미 설치되어 있는지 체크합니다."
 LangString DESC_RUNTIME 1042 "DLL 기반 모드가 제대로 작동하는 데 필요한 Visual C++ 2010, 2012, 2013 및 2015/2017/2019 런타임을 설치하거나 업데이트합니다. $\r$\n\
 $\r$\n\
 인스톨러가 다운로드하기 전에 Visual C++ 런타임이 이미 설치되어 있는지 체크합니다."
@@ -405,7 +406,7 @@ LangString DE_C_2010 1042 "SADX 2010 버전의 무결성을 확인하는 중..."
 LangString DE_E_TOOLS 1042 "도구를 압축 푸는 중..."
 LangString DE_C_TOOLS 1042 "도구를 확인하는 중..."
 LangString DE_E_SCR 1042 "스크립트를 압축 푸는 중..."
-LangString DE_E_VOICES 1042 "추가 음성들을 설치하는 중... 1042 "
+LangString DE_E_VOICES 1042 "추가 음성들을 설치하는 중..."
 LangString DE_SAVE 1042 "SADX 2010의 세이브 파일을 SADX 2004의 savedata 폴더로 복사하는 중..."
 LangString DE_DPI 1042 "sonic.exe에 대해 높은 DPI/전체 화면 최적화 예외설정 중..."
 LangString DE_FSOPT 1042 "sonic.exe에 대해 전체 화면 최적화 및 DPI 예외설정 중..."
@@ -414,7 +415,7 @@ LangString DE_CLEANUP 1042 "정리하는 중..."
 LangString DE_E_LAUNCHER 1042 "SADX 런처를 압축 푸는 중..."
 LangString DE_CHECKNET 1042 ".NET Framework 버전 체크 중..."
 LangString DE_E_NET 1042 ".NET Framework를 설치하는 중..."
-LangString DE_NETPRESENT 1042 ".NET Framework 4.5 이상이 이미 설치되어 있습니다 ($NetFrameworkVersion)."
+LangString DE_NETPRESENT 1042 ".NET Framework 4.8 이상이 이미 설치되어 있습니다 ($NetFrameworkVersion)."
 LangString DE_C_VCC 1042 "필요한 경우 설치하기 위해 Visual C++ 런타임을 체크 중..."
 LangString DE_E_VC2010 1042 "Visual C++ 2010 런타임 압축 푸는 중..."
 LangString DE_I_VC2010 1042 "Visual C++ 2010 런타임 설치하는 중..."

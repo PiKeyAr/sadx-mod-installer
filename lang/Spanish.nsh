@@ -195,7 +195,8 @@ LangString MSG_FINISH 1034 "Ahora puedes jugar SADX con los mods que instalaste.
 $\r$\nLos archivos usados por este instalador se guardaron en el folder 'instdata'. Puedes conservarlo para usar el instalador sin conexión luego o borrarlo para ahorrar espacio."
 
 ;Errors
-LangString ERR_NET_MISSING 1034 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1034 "Incompatible OS detected. This program only will only work on Windows 7 SP1 or later.$\r$\nContinue?"
+LangString ERR_NET_MISSING 1034 "The Steam conversion tool requires .NET Framework 4.8 to be installed.$\r$\nPlease install .NET Framework manually and run the installer again."
 LangString ERR_D_RESOURCES 1034 "Falló la descarga de datos de recursos: $DownloadErrorCode. ¿Continuar?"
 LangString ERR_D_DSOUND 1034 "Falló la descarga: $DownloadErrorCode. Sound Overhaul no funcionará correctamente hasta que dsound.dll se encuentre en el folder principal de SADX."
 LangString ERR_D_STEAM 1034 "Falló la descarga de Steam Achievements: $DownloadErrorCode. ¿Continuar instalando otros mods?"
@@ -279,7 +280,7 @@ $\r$\n\
 SADX Launcher es una herramienta para cambiar los ajustes del Mod Loader y configurar controles para el Input Mod."
 LangString DESC_NET 1034 "Instala o actualiza .NET Framework, necesario para que SADX Mod Manager funcione adecuadamente. $\r$\n\
 $\r$\n\
-El instalador revisa si está instalado .NET Framework 4.5 o superior antes de descargarlo."
+El instalador revisa si está instalado .NET Framework 4.8 antes de descargarlo."
 LangString DESC_RUNTIME 1034 "Instala o actualiza los runtimes Visual C++ 2010, 2012, 2013 y 2015/2017/2019, necesarios para que los mods basados en DLL funcionen adecuadamente. $\r$\n\
 $\r$\n\
 El instalador revisa si están instalados los runtimes de Visual C++ antes de descargarlos."
@@ -405,7 +406,7 @@ LangString DE_C_2010 1034 "Revisando integridad de la instalación de SADX 2010�
 LangString DE_E_TOOLS 1034 "Extrayendo herramientas…"
 LangString DE_C_TOOLS 1034 "Verificando herramientas…"
 LangString DE_E_SCR 1034 "Extrayendo scripts…"
-LangString DE_E_VOICES 1034 "Instalando voces adicionales… 1034 "
+LangString DE_E_VOICES 1034 "Instalando voces adicionales…"
 LangString DE_SAVE 1034 "Copiando datos de guardado de SADX 2010 a la carpeta de guardado de SADX 2004…"
 LangString DE_DPI 1034 "Añadiendo excepción de optimizaciones de PPP y pantalla completa para sonic.exe…"
 LangString DE_FSOPT 1034 "Añadiendo optimización de pantalla completa y excepción de DPI para sonic.exe…"
@@ -414,7 +415,7 @@ LangString DE_CLEANUP 1034 "Limpiando…"
 LangString DE_E_LAUNCHER 1034 "Extrayendo SADX Launcher…"
 LangString DE_CHECKNET 1034 "Revisando versión de .NET Framework…"
 LangString DE_E_NET 1034 "Instalando .NET Framework…"
-LangString DE_NETPRESENT 1034 "Ya se encuentra instalado .NET Framework 4.5 o superior ($NetFrameworkVersion)."
+LangString DE_NETPRESENT 1034 "Ya se encuentra instalado .NET Framework 4.8 ($NetFrameworkVersion)."
 LangString DE_C_VCC 1034 "Revisando runtimes de Visual C++ e instalando, de ser necesario…"
 LangString DE_E_VC2010 1034 "Extrayendo runtime Visual C++ 2010…"
 LangString DE_I_VC2010 1034 "Instalando runtime Visual C++ 2010…"

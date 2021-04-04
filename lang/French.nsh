@@ -195,7 +195,8 @@ LangString MSG_FINISH 1036 "Vous pouvez maintenant jouer à SADX avec les mods q
 $\r$\nLes fichiers utilisés par ce programme d'Installation ont été enregistrés dans le dossier «instdata». Vous pouvez le conserver pour utiliser le programme d'Installation hors-ligne ultérieurement, ou le supprimer pour économiser de l'espace disque."
 
 ;Errors
-LangString ERR_NET_MISSING 1036 "The Steam conversion tool requires .NET Framework 4.5 or higher to be installed.$\r$\n\Please install .NET Framework manually and run the installer again."
+LangString ERR_REQUIREDOS 1036 "Incompatible OS detected. This program requires Windows 7 SP1 or later to work properly.$\r$\nContinue?"
+LangString ERR_NET_MISSING 1036 "The Steam conversion tool requires .NET Framework 4.8 to be installed.$\r$\nPlease install .NET Framework manually and run the installer again."
 LangString ERR_D_RESOURCES 1036 "Échec du téléchargement des resource data: $DownloadErrorCode. Continuer?"
 LangString ERR_D_DSOUND 1036 "Échec du téléchargement: $DownloadErrorCode. Sound Overhaul ne fonctionnera pas correctement jusqu'à ce que dsound.dll soit placé dans le dossier principal de SADX."
 LangString ERR_D_STEAM 1036 "Échec du téléchargement de Steam Achievements: $DownloadErrorCode. Continuer l'installation des autres mods?"
@@ -279,7 +280,7 @@ $\r$\n\
 SADX Launcher est un outil pour modifier les paramètres du Mod Loader et configurer les contrôles de Input Mod."
 LangString DESC_NET 1036 "Installe ou met à jour .NET Framework, qui est requis pour que SADX Mod Manager fonctionne correctement. $\r$\n\
 $\r$\n\
-Le programme d'installation vérifie si .NET Framework 4.5 ou supérieur est déjà installé avant de le télécharger."
+Le programme d'installation vérifie si .NET Framework 4.8 est déjà installé avant de le télécharger."
 LangString DESC_RUNTIME 1036 "Installez/met à jour les runtimes Visual C ++ 2010, 2012, 2013 et 2015/2017/2019, qui sont nécessaires pour que les mods basés sur les DLL fonctionnent correctement. $\r$\n\
 $\r$\n\
 Le programme d'installation vérifie si les runtimes Visual C ++ sont déjà installés avant de les télécharger."
@@ -405,7 +406,7 @@ LangString DE_C_2010 1036 "Vérification de l'intégralité de l'installation de
 LangString DE_E_TOOLS 1036 "Extraction de tools..."
 LangString DE_C_TOOLS 1036 "Vérification de tools..."
 LangString DE_E_SCR 1036 "Extraction des scripts..."
-LangString DE_E_VOICES 1036 "Installation des voix additionnelles... 1036 "
+LangString DE_E_VOICES 1036 "Installation des voix additionnelles..."
 LangString DE_SAVE 1036 "Copie des sauvegardes de SADX 2010 dans le dossier SAVEDATA de SADX 2004..."
 LangString DE_DPI 1036 "Ajout d'exception d'optimisations DPI Elevé / plein écran pour sonic.exe..."
 LangString DE_FSOPT 1036 "Ajout de l'optimisation plein écran et exception DPI pour sonic.exe..."
@@ -414,7 +415,7 @@ LangString DE_CLEANUP 1036 "Nettoyage..."
 LangString DE_E_LAUNCHER 1036 "Extraction SADX Launcher..."
 LangString DE_CHECKNET 1036 " la version de .NET Framework..."
 LangString DE_E_NET 1036 "Installation de .NET Framework..."
-LangString DE_NETPRESENT 1036 "La version 4.5 ou ultérieur de .NET Framework est déjà installé. ($NetFrameworkVersion)."
+LangString DE_NETPRESENT 1036 "La version 4.8 de .NET Framework est déjà installé. ($NetFrameworkVersion)."
 LangString DE_C_VCC 1036 "Vérification de Visual C++ runtimes et Installation de ce dernier si nécessaire..."
 LangString DE_E_VC2010 1036 "Extraction de Visual C++ 2010 runtime..."
 LangString DE_I_VC2010 1036 "Installation de Visual C++ 2010 runtime..."
