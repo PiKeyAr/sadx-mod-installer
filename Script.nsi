@@ -150,7 +150,7 @@ Function .onInit
 	StrCmp $IncompatibleOS "1" 0 +3
 	MessageBox MB_YESNO $(ERR_REQUIREDOS) IDYES +2 IDNO 0
 	Quit
-	StrCpy $BuildNumber "Build 33"
+	StrCpy $BuildNumber "Build 34"
 	; Delete old mods
 	${If} ${FileExists} "$EXEDIR\instdata\OptionalMods.7z"
 		Delete "$EXEDIR\instdata\OptionalMods.7z"
