@@ -496,8 +496,8 @@ namespace SteamHelper
 		{
 			saves = new List<byte[]>();
 			string path_sadx2004 = Environment.CurrentDirectory;
-			string path_steam = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Documents", "SEGA", "Sonic Adventure DX", "SAVEDATA");
-			string path_dccol = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Documents", "SEGA", "Dreamcast Collection", "Sonic Adventure DX", "SAVEDATA");
+			string path_steam = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SEGA", "Sonic Adventure DX", "SAVEDATA");
+			string path_dccol = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SEGA", "Dreamcast Collection", "Sonic Adventure DX", "SAVEDATA");
 			string path_savefolder = path_steam;
 			bool dosaves = false;
 			if (Directory.Exists(path_steam))
