@@ -49,10 +49,9 @@ LangString SECTIONNAME_ONION 1042 "어니언 스킨 블러 모드 (SonicFreak94 
 LangString SECTIONNAME_IDLE 1042 "수다쟁이 잡담 모드 (SonicFreak94 제작)"
 LangString SECTIONNAME_PAUSE 1042 "일시정지 메뉴 숨기기 모드 (SonicFreak94 제작)"
 LangString SECTIONNAME_STEAM 1042 "Steam 도전과제 지원 모드 (MainMemory 제작)"
-LangString SECTIONNAME_SUPER 1042 "슈퍼 소닉 모드 (x-hax 제작)"
+LangString SECTIONNAME_SUPER 1042 "슈퍼 소닉 모드 (Kell, SonicFreak94 제작)"
 LangString SECTIONNAME_EEC 1042 "에메랄드 코스트 수정 모드 (PkR 제작)"
 LangString SECTIONNAME_TIME 1042 "시간의 흐름 모드 (PkR 제작)"
-LangString SECTIONNAME_ECMUSIC 1042 "에그 캐리어 오션 음악 모드 (MainMemory 제작)"
 LangString SECTIONNAME_ADX 1042 "ADX 음성 및 음악 (2004년 이식작용)"
 LangString SECTIONNAME_SND 1042 "사운드 오버홀 3 (PkR 제작)"
 LangString SECTIONNAME_HDGUI 1042 "HD GUI 2 (PkR 외 다수 제작)"
@@ -334,7 +333,6 @@ LangString DESC_CCEF 1042 "스테이지 재시작 시에 오토 카메라로 리
 $\r$\n\
 SADXFE를 사용하지 못하는 스피드러너들에게 유용합니다."
 LangString DESC_ENHANCEMENTS 1042 "새로운 게임 플레이 기능을 추가하거나 순정 SADX의 그래픽을 개선한 모드입니다."
-LangString DESC_ECMUSIC 1042 "가라앉은 상태에서 에그 캐리어 외부로 가면 'The Ocean' 음악이 재생됩니다."
 LangString DESC_IDLECHATTER 1042 "Z를 누르면 캐릭터가 스테이지에 대해 이것저것 말합니다."
 
 ;Other descriptions
@@ -471,7 +469,6 @@ LangString MOD_PAUSE 1042 "일시정지 숨기기 모드"
 LangString MOD_SUPER 1042 "슈퍼 소닉 모드"
 LangString MOD_EEC 1042 "에메랄드 코스트 수정 모드"
 LangString MOD_TIME 1042 "시간의 흐름 모드"
-LangString MOD_ECMUSIC 1042 "에그 캐리어 오션 음악 모드"
 LangString MOD_ADX 1042 "ADX 오디오"
 LangString MOD_SND 1042 "사운드 오버홀"
 LangString MOD_HDGUI 1042 "HD GUI"

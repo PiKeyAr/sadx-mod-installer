@@ -46,7 +46,7 @@ Function fnc_TypeSel_Create
   Pop $hCtl_TypeSel_Option_Minimal
   
   ; === TypeComment (type: Label) ===
-  ${NSD_CreateLabel} 0u 71.53u 250.51u 51.76u "Full Dreamcast experience with fixes and enhancements.$\r$\n$\r$\nMods included: SADX Fixed Edition, Dreamcast Levels, Dreamcast Branding, SET layout fixes, Sound Overhaul, HD GUI, Lantern Engine, Dreamcast Characters Pack, SA1 DLC content, Time of Day, Input Mod, Pause Hide, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+  ${NSD_CreateLabel} 0u 71.53u 250.51u 51.76u "Full Dreamcast experience with fixes and enhancements.$\r$\n$\r$\nMods included: SADX Fixed Edition, Dreamcast Levels, Dreamcast Branding, SET layout fixes, Sound Overhaul, HD GUI, Lantern Engine, Dreamcast Characters Pack, SA1 DLC content, Time of Day, Input Mod, Pause Hide, Smooth Camera, Frame Limit, Super Sonic."
   Pop $hCtl_TypeSel_TypeComment
   
   ; === SelectTypeText (type: Label) ===

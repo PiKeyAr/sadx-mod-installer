@@ -49,10 +49,9 @@ LangString SECTIONNAME_ONION 1049 "Onion Skin Blur от SonicFreak94"
 LangString SECTIONNAME_IDLE 1049 "Idle Chatter от SonicFreak94"
 LangString SECTIONNAME_PAUSE 1049 "Pause Hide от SonicFreak94"
 LangString SECTIONNAME_STEAM 1049 "Steam Achievements от MainMemory"
-LangString SECTIONNAME_SUPER 1049 "Super Sonic от x-hax"
+LangString SECTIONNAME_SUPER 1049 "Super Sonic от Kell & SonicFreak94"
 LangString SECTIONNAME_EEC 1049 "Enhanced Emerald Coast от PkR"
 LangString SECTIONNAME_TIME 1049 "Time of Day от PkR"
-LangString SECTIONNAME_ECMUSIC 1049 "Egg Carrier Ocean Music от MainMemory"
 LangString SECTIONNAME_ADX 1049 "ADX voices and music (для порта 2004 года)"
 LangString SECTIONNAME_SND 1049 "Sound Overhaul 3 от PkR"
 LangString SECTIONNAME_HDGUI 1049 "HD GUI 2 от PkR & других"
@@ -334,7 +333,6 @@ LangString DESC_CCEF 1049 "Исправляет ошибку, из-за кото
 $\r$\n\
 Полезно для спидраннеров, которые не используют SADXFE."
 LangString DESC_ENHANCEMENTS 1049 "Моды, которые добавляют новые игровые возможности и улучшают внешний вид SADX."
-LangString DESC_ECMUSIC 1049 "Этот мод исправляет ошибку, из-за которой музыкальный трек 'The Ocean' на внешних локациях Яйценосца проигрывался только один раз в оригинальной игре."
 LangString DESC_IDLECHATTER 1049 "Нажмите кнопку Z, чтобы персонаж сказал что-нибудь!"
 
 ;Other descriptions
@@ -342,9 +340,9 @@ LangString DESC_DESC 1049 "Описание"
 LangString DESC_PRESERVE 1049 "Сохранит config.ini при обновлении или переустановке мода."
 LangString DESC_ICON 1049 "Инсталлятор изменит иконку sonic.exe на выбранную вами."
 LangString DESC_DCMODS_ALL 1049 "Эти моды делают SADX более похожей на Dreamcast-версию Sonic Adventure.$\r$\n\
-В набор входят: SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+В набор входят: SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_SADX_ALL 1049 "Улучшенная версия оригинального PC порта SADX.$\r$\n\
-В набор входят: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+В набор входят: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_MIN_ALL 1049 "Только необходимые/разрешённые для спидранов моды.$\r$\n\
 В набор входят: Frame Limit, Camera Code Error Fix."
 LangString DESC_CUSTOM_ALL 1049 "Выборочная установка.$\r$\n\
@@ -471,7 +469,6 @@ LangString MOD_PAUSE 1049 "Pause Hide"
 LangString MOD_SUPER 1049 "Super Sonic"
 LangString MOD_EEC 1049 "Enhanced Emerald Coast"
 LangString MOD_TIME 1049 "Time Of Day"
-LangString MOD_ECMUSIC 1049 "Egg Carrier Ocean Music"
 LangString MOD_ADX 1049 "ADX Audio"
 LangString MOD_SND 1049 "Sound Overhaul"
 LangString MOD_HDGUI 1049 "HD GUI"

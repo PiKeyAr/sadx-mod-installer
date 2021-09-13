@@ -50,10 +50,9 @@ LangString SECTIONNAME_ONION 1041 "Onion Skin Blur 作者 SonicFreak94"
 LangString SECTIONNAME_IDLE 1041 "Idle Chatter 作者 SonicFreak94"
 LangString SECTIONNAME_PAUSE 1041 "Pause Hide 作者 SonicFreak94"
 LangString SECTIONNAME_STEAM 1041 "Steam Achievements 作者 MainMemory"
-LangString SECTIONNAME_SUPER 1041 "Super Sonic 作者 x-hax"
+LangString SECTIONNAME_SUPER 1041 "Super Sonic 作者 Kell & SonicFreak94"
 LangString SECTIONNAME_EEC 1041 "Enhanced Emerald Coast 作者 PkR"
 LangString SECTIONNAME_TIME 1041 "Time of Day 作者 PkR"
-LangString SECTIONNAME_ECMUSIC 1041 "Egg Carrier Ocean Music 作者 MainMemory"
 LangString SECTIONNAME_ADX 1041 "ADX ボイスとミュージック (2004年移植版から)"
 LangString SECTIONNAME_SND 1041 "Sound Overhaul 3 作者 PkR"
 LangString SECTIONNAME_HDGUI 1041 "HD GUI 2 作者 PkR & その他"
@@ -334,7 +333,6 @@ LangString DESC_CCEF 1041 "レベルの再読み込み時に時にカメラが�
 $\r$\n\
 競技などで SADXFE を使わない、やり込みプレイやタイムアタック走者に有効です。"
 LangString DESC_ENHANCEMENTS 1041 "新しいゲームプレイ機能を追加したり、バニラ(オリジナル)版ソニックアドベンチャー DX の外観を改善する Mod です。"
-LangString DESC_ECMUSIC 1041 "エッグキャリアが沈没した際に、エッグキャリアの外側のエリアで音楽「The Ocean」を再生します。"
 LangString DESC_IDLECHATTER 1041 "Z キーを押すと、キャラクターがステージについて語っているのが聞けます!"
 
 ;Other descriptions
@@ -342,9 +340,9 @@ LangString DESC_DESC 1041 "説明"
 LangString DESC_PRESERVE 1041 "これを有効にすると、Mod を更新したり再インストールしたりする際に config.ini が保持されます。"
 LangString DESC_ICON 1041 "実行ファイルは、このインストーラーで利用可能ないずれかのカスタムアイコンでパッチされます。"
 LangString DESC_DCMODS_ALL 1041 "これらの Mod は、SADX はオリジナルドリームキャスト版初代ソニックアドベンチャーのように見えるようになります。$\r$\n\
-Mod 内容 : SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+Mod 内容 : SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_SADX_ALL 1041 "強化されたバニラ(オリジナル)版ソニックアドンチャー DX を体験.$\r$\n\
-Mod 内容: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+Mod 内容: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_MIN_ALL 1041 "必須 / speedrun（やり込み）に適した Mod のみがインストールされます。$\r$\n\
 Mod 内容: Frame Limit, Camera Code Error Fix."
 LangString DESC_CUSTOM_ALL 1041 "カスタムインストール。$\r$\n\
@@ -471,7 +469,6 @@ LangString MOD_PAUSE 1041 "Pause Hide"
 LangString MOD_SUPER 1041 "Super Sonic"
 LangString MOD_EEC 1041 "Enhanced Emerald Coast"
 LangString MOD_TIME 1041 "Time Of Day"
-LangString MOD_ECMUSIC 1041 "Egg Carrier Ocean Music"
 LangString MOD_ADX 1041 "ADX Audio"
 LangString MOD_SND 1041 "Sound Overhaul"
 LangString MOD_HDGUI 1041 "HD GUI"

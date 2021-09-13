@@ -1046,7 +1046,7 @@ SectionEnd
 Section $(SECTIONNAME_SUPER) SECTION_SUPERSONIC
 SectionIn 1 2
 StrCpy $Modname $(MOD_SUPER)
-StrCpy $ModFilename "super-sonic"
+StrCpy $ModFilename "sadx-super-sonic"
 Call ModInstall
 ${If} $ModInstallSuccess == "1"
 	IntOp $INST_SUPERSONIC 0 + 1
@@ -1075,16 +1075,6 @@ ${If} $ModInstallSuccess == "1"
 	RmDir /r "$INSTDIR\mods\DC Conversion\OptionalMods\TrainDaytime"
 	IntOp $INST_TIMEOFDAY 0 + 1
 	Call GenerateModVersion
-${EndIf}
-SectionEnd
-
-Section $(SECTIONNAME_ECMUSIC) SECTION_ECMUSIC
-SectionIn 1 2
-StrCpy $Modname $(MOD_ECMUSIC)
-StrCpy $ModFilename "EggCarrierOceanMusic"
-Call ModInstall
-${If} $ModInstallSuccess == "1"
-	IntOp $INST_ECMUSIC 0 + 1
 ${EndIf}
 SectionEnd
 
@@ -1234,15 +1224,10 @@ IntOp $ModIndex $ModIndex + 1
 FileWrite $2 "$\r$\n"
 FileWrite $2 "Mod$ModIndex=SteamAchievements"
 
-StrCmp $INST_ECMUSIC "0" +4 0
-IntOp $ModIndex $ModIndex + 1
-FileWrite $2 "$\r$\n"
-FileWrite $2 "Mod$ModIndex=EggCarrierOceanMusic"
-
 StrCmp $INST_SUPERSONIC "0" +4 0
 IntOp $ModIndex $ModIndex + 1
 FileWrite $2 "$\r$\n"
-FileWrite $2 "Mod$ModIndex=super-sonic"
+FileWrite $2 "Mod$ModIndex=sadx-super-sonic"
 
 StrCmp $INST_LANTERN "0" +4 0
 IntOp $ModIndex $ModIndex + 1
@@ -1288,6 +1273,8 @@ FileWrite $2 "Mod$ModIndex=HD_DCStyle"
 
 FileWrite $2 "$\r$\n"
 FileWrite $2 "Code1=Use Tornado 2 Health Bar in Sky Chase Act 2"
+FileWrite $2 "$\r$\n"
+FileWrite $2 "Code2=Egg Carrier Ocean Music"
 FileClose $2
 IfFileExists "$INSTDIR\mods\SADXModLoader.ini" 0 +4
 Delete "$INSTDIR\mods\SADXModLoader.bak"

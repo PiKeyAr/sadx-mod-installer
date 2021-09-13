@@ -140,7 +140,7 @@ Function CheckUpdates
 			StrCpy $UpdateFilename "steam_tools.7z"
 			Call CheckModUpdate
 
-			StrCpy $UpdateFilename "super-sonic.7z"
+			StrCpy $UpdateFilename "sadx-super-sonic.7z"
 			Call CheckModUpdate
 
 			StrCpy $UpdateFilename "TrainDaytime.7z"

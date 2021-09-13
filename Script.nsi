@@ -124,7 +124,6 @@ InstType $(INSTTYPE_MIN)
 !insertmacro MUI_DESCRIPTION_TEXT ${SECTION_SUPERSONIC} $(DESC_SUPERSONIC)
 !insertmacro MUI_DESCRIPTION_TEXT ${SECTION_CCEF} $(DESC_CCEF)
 !insertmacro MUI_DESCRIPTION_TEXT ${SECTION_EEC} $(DESC_EEC)
-!insertmacro MUI_DESCRIPTION_TEXT ${SECTION_ECMUSIC} $(DESC_ECMUSIC)
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ; Initialization
@@ -150,7 +149,7 @@ Function .onInit
 	StrCmp $IncompatibleOS "1" 0 +3
 	MessageBox MB_YESNO $(ERR_REQUIREDOS) IDYES +2 IDNO 0
 	Quit
-	StrCpy $BuildNumber "Build 34"
+	StrCpy $BuildNumber "Build 35"
 	; Delete old mods
 	${If} ${FileExists} "$EXEDIR\instdata\OptionalMods.7z"
 		Delete "$EXEDIR\instdata\OptionalMods.7z"
@@ -217,12 +216,11 @@ Function .onInit
 	SectionSetSize ${SECTION_IDLECHATTER} 7
 	SectionSetSize ${SECTION_PAUSEHIDE} 7
 	SectionSetSize ${SECTION_SA1CHARS} 7000
-	SectionSetSize ${SECTION_SUPERSONIC} 11
+	SectionSetSize ${SECTION_SUPERSONIC} 162
 	SectionSetSize ${SECTION_FRAMELIMIT} 15
 	SectionSetSize ${SECTION_TIMEOFDAY} 10
 	SectionSetSize ${SECTION_EEC} 2850
 	SectionSetSize ${SECTION_INPUTMOD} 1050
-	SectionSetSize ${SECTION_ECMUSIC} 7
 	; Initialize variables
 	IntOp $EnableWindowTitle 0 + 0
 	StrCpy $EnableCustomIcon "0"
@@ -252,7 +250,6 @@ Function .onInit
 	IntOp $INST_DLCS 0 + 0
 	IntOp $INST_STEAM 0 + 0
 	IntOp $INST_SUPERSONIC 0 + 0
-	IntOp $INST_ECMUSIC 0 + 0
 	IntOp $INST_EEC 0 + 0
 	IntOp $INST_CCEF 0 + 0
 	IntOp $INST_IDLECHATTER 0 + 0

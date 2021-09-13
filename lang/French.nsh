@@ -49,10 +49,9 @@ LangString SECTIONNAME_ONION 1036 "Onion Skin Blur par SonicFreak94"
 LangString SECTIONNAME_IDLE 1036 "Idle Chatter par SonicFreak94"
 LangString SECTIONNAME_PAUSE 1036 "Pause Hide par SonicFreak94"
 LangString SECTIONNAME_STEAM 1036 "Steam Achievements par MainMemory"
-LangString SECTIONNAME_SUPER 1036 "Super Sonic par x-hax"
+LangString SECTIONNAME_SUPER 1036 "Super Sonic par Kell & SonicFreak94"
 LangString SECTIONNAME_EEC 1036 "Enhanced Emerald Coast par PkR"
 LangString SECTIONNAME_TIME 1036 "Time of Day par PkR"
-LangString SECTIONNAME_ECMUSIC 1036 "Egg Carrier Ocean Music par MainMemory"
 LangString SECTIONNAME_ADX 1036 "ADX voices and music (pour la version 2004)"
 LangString SECTIONNAME_SND 1036 "Sound Overhaul 3 par PkR"
 LangString SECTIONNAME_HDGUI 1036 "HD GUI 2 par PkR & others"
@@ -334,7 +333,6 @@ LangString DESC_CCEF 1036 "Empêche la caméra de se réinitialiser au chargemen
 $\r$\n\
 Utile pour les speedrunners qui n'utilisent pas SADXFE."
 LangString DESC_ENHANCEMENTS 1036 "Mods qui ajoutent de nouvelles fonctionnalités de gameplay ou améliore SADX vanilla."
-LangString DESC_ECMUSIC 1036 "Joue la musique 'The Ocean' dans les zones extérieures de l'Egg Carrier une fois le vaisseau coulé."
 LangString DESC_IDLECHATTER 1036 "Appuyez sur Z pour entendre ce que le personnage dit sur le niveau."
 
 ;Other descriptions
@@ -342,9 +340,9 @@ LangString DESC_DESC 1036 "Déscription"
 LangString DESC_PRESERVE 1036 "L'activation de cette fonctionnalité préservera config.ini lors de la mise à jour et la réinstallation des mods."
 LangString DESC_ICON 1036 "L'exécutable sera patché avec l'une des icônes personnalisées disponibles dans ce programme d'installation."
 LangString DESC_DCMODS_ALL 1036 "Ces mods donnent à SADX une apparence plus proche de la version originale Dreamcast de SA1.$\r$\n\
-Mods inclus: SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+Mods inclus: SADX: Fixed Edition, Onion Blur, Dreamcast Conversion, DC Characters, DLC content, Sound Overhaul, HD GUI, Lantern Engine, Time of Day, Input Mod, Idle Chatter, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_SADX_ALL 1036 "Expérience SADX vanilla améliorée.$\r$\n\
-Mods inclus: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic, Egg Carrier Ocean Music."
+Mods inclus: SADX: Fixed Edition, Onion Blur, Enhanced Emerald Coast, Sound Overhaul, HD GUI, Time of Day, Input Mod, Idle Chatter, Pause Hide, Smooth Camera, Frame Limit, Super Sonic."
 LangString DESC_MIN_ALL 1036 "Seuls les mods essentiels / compatibles speedrun seront installés.$\r$\n\
 Mods inclus: Frame Limit, Camera Code Error Fix."
 LangString DESC_CUSTOM_ALL 1036 "Installation personnalisée.$\r$\n\
@@ -471,7 +469,6 @@ LangString MOD_PAUSE 1036 "Pause Hide"
 LangString MOD_SUPER 1036 "Super Sonic"
 LangString MOD_EEC 1036 "Enhanced Emerald Coast"
 LangString MOD_TIME 1036 "Time Of Day"
-LangString MOD_ECMUSIC 1036 "Egg Carrier Ocean Music"
 LangString MOD_ADX 1036 "ADX Audio"
 LangString MOD_SND 1036 "Sound Overhaul"
 LangString MOD_HDGUI 1036 "HD GUI"
